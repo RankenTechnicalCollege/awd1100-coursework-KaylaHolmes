@@ -37,6 +37,7 @@
             this.lblScoreThree = new System.Windows.Forms.Label();
             this.lblScoreFour = new System.Windows.Forms.Label();
             this.lblResults = new System.Windows.Forms.Label();
+            this.btnFindAverage = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtScoreOne
@@ -66,6 +67,7 @@
             this.txtScoreFour.Name = "txtScoreFour";
             this.txtScoreFour.Size = new System.Drawing.Size(100, 22);
             this.txtScoreFour.TabIndex = 3;
+            this.txtScoreFour.TextChanged += new System.EventHandler(this.txtScoreFour_TextChanged_1);
             // 
             // lblScoreOne
             // 
@@ -106,16 +108,27 @@
             // lblResults
             // 
             this.lblResults.AutoSize = true;
-            this.lblResults.Location = new System.Drawing.Point(37, 321);
+            this.lblResults.Location = new System.Drawing.Point(37, 345);
             this.lblResults.Name = "lblResults";
             this.lblResults.Size = new System.Drawing.Size(0, 16);
             this.lblResults.TabIndex = 9;
+            // 
+            // btnFindAverage
+            // 
+            this.btnFindAverage.Location = new System.Drawing.Point(40, 276);
+            this.btnFindAverage.Name = "btnFindAverage";
+            this.btnFindAverage.Size = new System.Drawing.Size(146, 23);
+            this.btnFindAverage.TabIndex = 10;
+            this.btnFindAverage.Text = "Find Average";
+            this.btnFindAverage.UseVisualStyleBackColor = true;
+            this.btnFindAverage.Click += new System.EventHandler(this.btnFindAverage_Click);
             // 
             // Lab02
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnFindAverage);
             this.Controls.Add(this.lblResults);
             this.Controls.Add(this.lblScoreFour);
             this.Controls.Add(this.lblScoreThree);
@@ -143,6 +156,7 @@
         private System.Windows.Forms.Label lblScoreThree;
         private System.Windows.Forms.Label lblScoreFour;
         private System.Windows.Forms.Label lblResults;
+        private System.Windows.Forms.Button btnFindAverage;
     }
 }
 

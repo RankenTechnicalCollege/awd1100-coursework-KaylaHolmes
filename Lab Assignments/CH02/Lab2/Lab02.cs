@@ -22,7 +22,13 @@ namespace Lab2
 
         }
 
-        private void txtScoreFour_TextChanged(object sender, EventArgs e)
+
+        private void txtScoreFour_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnFindAverage_Click(object sender, EventArgs e)
         {
             //Declared and Assigned a Constant
             //Data type is double
@@ -30,13 +36,16 @@ namespace Lab2
             double Score_Average = 4;
 
             double ScoreOne = Convert.ToDouble(txtScoreOne.Text);
+
             double ScoreTwo = Convert.ToDouble(txtScoreTwo.Text);
+
             double ScoreThree = Convert.ToDouble(txtScoreThree.Text);
+
             double ScoreFour = Convert.ToDouble(txtScoreFour.Text);
 
-            double added = ScoreOne + ScoreTwo + ScoreThree + ScoreFour / Score_Average;
+            double added = (ScoreOne + ScoreTwo + ScoreThree + ScoreFour) / Score_Average;
 
-            lblResults.Text = String.Format("The average of these four test scores is {0}",added);
+            lblResults.Text = String.Format("The average of these four test scores is {0}", added);
         }
     }
 }

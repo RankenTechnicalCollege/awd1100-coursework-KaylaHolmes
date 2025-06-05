@@ -10,41 +10,37 @@ using System.Windows.Forms;
 
 namespace Lab04
 {
-    public partial class Form1 : Form
+    public partial class frmLab04 : Form
     {
-        public Form1()
+        public frmLab04()
         {
             InitializeComponent();
         }
 
-        private void Year_Click(object sender, EventArgs e)
+        private void btnCalculate_Click(object sender, EventArgs e)
         {
+            //Declared and ASSIGNED is Constant
+            //Data type is Constant
+            //Identifier is DAYS_RENTED
+            double DAYS_RENTED = 100;
 
-        }
+            double Days = Convert.ToDouble(txtDaysRented.Text);
 
-        private void label1_Click(object sender, EventArgs e)
-        {
+            double Multiply1st = Days * DAYS_RENTED;
 
-        }
+            lblDaysResults.Text = String.Format("Total for Days ${0}", Multiply1st);
 
-        private void label6_Click(object sender, EventArgs e)
-        {
+            double MilesDriven = .50;
 
-        }
+            double Miles = Convert.ToDouble(txtMiles.Text);
 
-        private void label1_Click_1(object sender, EventArgs e)
-        {
+            double Multiply2nd = MilesDriven * Miles;
 
-        }
+            lblMilesResults.Text = String.Format("Total for Miles ${0}", Multiply2nd);
 
-        private void label1_Click_2(object sender, EventArgs e)
-        {
+            double added = Multiply2nd + Multiply1st;
 
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
+            lblAmountDue.Text = String.Format("Amount Due is ${0}", added);
         }
     }
 }
