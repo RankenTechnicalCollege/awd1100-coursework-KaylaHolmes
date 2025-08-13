@@ -16,5 +16,10 @@ namespace Lab_1
         {
             InitializeComponent();
         }
+
+        private void btnAdmit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

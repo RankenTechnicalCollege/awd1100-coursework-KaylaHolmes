@@ -76,6 +76,7 @@
             this.btnAdmit.TabIndex = 4;
             this.btnAdmit.Text = "Admit";
             this.btnAdmit.UseVisualStyleBackColor = true;
+            this.btnAdmit.Click += new System.EventHandler(this.btnAdmit_Click);
             // 
             // lblResults
             // 
